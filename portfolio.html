@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mève Arroseres — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio de Mève — Développeuse web junior"
+    />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+    <!-- 2 familles : Oswald (titres) + Work Sans (texte) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Work+Sans:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-row">
+        <a class="logo" href="#hero" aria-label="Accueil">
+          <img
+            src="img/Logo en haut.png"
+            alt="Logo Mève"
+            width="56"
+            height="56"
+            decoding="async"
+          />
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <ul id="mainmenu" class="menu list">
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__right">
+          <ul class="socials list-unstyled">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/m%C3%A8ve-arroseres-77663a24b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <img
+                  src="img/Linkedin.png"
+                  alt="Logo LinkedIn"
+                  width="50"
+                  height="50"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Meve-Arroseres"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <img
+                  src="img/GitHub.png"
+                  alt="Logo GitHub"
+                  width="50"
+                  height="50"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="CV"
+              >
+            </a>
+                <img
+                  src="img/Cv M.png"
+                  alt="Logo cv"
+                  width="50"
+                  height="50"
+                />
+            </li>
+          </ul>
+
+          <button
+            class="burger"
+            aria-label="Ouvrir le menu"
+            aria-controls="mainmenu"
+            aria-expanded="false"
+          >
+            <span class="bar" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section id="hero" class="section hero" aria-labelledby="hero-title">
+        <div class="container grid">
+          <div class="col hero-left">
+            <h1 id="hero-title" class="hero-title">JE SUIS MÈVE ARROSERES</h1>
+            <p class="hero-sub">
+              <span
+                id="typer"
+                data-words='["Développeuse Web Junior","Front + un jour Cyber"]'
+              >
+                Développeuse Web Junior
+              </span>
+            </p>
+            <button
+              id="themeToggle"
+              class="btn-ghost"
+              aria-label="Basculer le thème"
+            >
+              🌓
+            </button>
+          </div>
+          <div class="col hero-right">
+            <figure class="avatar">
+              <img
+                width="400"
+                src="img/Reine Mève.png"
+                alt="Avatar stylisé"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- A PROPOS -->
+      <section id="apropos" class="section" aria-labelledby="apropos-title">
+        <div class="container grid">
+          <div class="col">
+            <svg
+              width="450"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+              role="img"
+              aria-label="Icône décorative"
+            >
+              <!--!Font Awesome Free 7.0.1 by @fontawesome -->
+              <path
+                fill="#800000"
+                d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z"
+              />
+            </svg>
+          </div>
+          <div class="col">
+            <h2 id="apropos-title" class="title">À propos</h2>
+            <h3>Qui suis-je ?</h3>
+            <p>
+              Je suis étudiante en Pré-MSc à Epitech, en pleine réorientation
+              vers l’informatique après plusieurs expériences en commerce et
+              gestion de projets. J’ai choisi cette voie pour retrouver ce que
+              j’aime : la logique, la technique et la résolution de problèmes
+              concrets. Aujourd’hui, je cherche une alternance sur Marseille et
+              ses alentours. Mon but : démarrer en développement logiciel, puis
+              évoluer vers la cybersécurité, notamment la sécurité applicative,
+              le durcissement et les audits.
+            </p>
+            <ul class="list bullets">
+              <li>Rigoureuse & curieuse</li>
+              <li>Autonome & team-player</li>
+              <li>Accessibilité</li>
+              <li>Apprentissage quotidien</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARCOURS -->
+      <section id="parcours" class="section" aria-labelledby="parcours-title">
+        <div class="container">
+          <header class="section-head">
+            <h2 id="parcours-title" class="title">Mon parcours</h2>
+            <p>Un mix formations + expériences qui m’a amenée au dev.</p>
+          </header>
+
+          <h3 class="subtitle">Mes formations</h3>
+          <div class="cards">
+            <article class="card">
+              <h4>Pré-MSc, Master of Science</h4>
+              <p>
+                Epitech, Marseille —
+                <time datetime="2025">2025</time>–<time datetime="2028"
+                  >2028</time
+                >
+              </p>
+            </article>
+            <article class="card">
+              <h4>BTS Conseil et Commercialisation des Solutions Techniques</h4>
+              <p>
+                Euridis BS, Aix-en-Provence —
+                <time datetime="2022">2022</time>–<time datetime="2024"
+                  >2024</time
+                >
+              </p>
+            </article>
+            <article class="card">
+              <h4>2 années de Droit</h4>
+              <p>
+                AMU Faculté de Droit, Aix-en-Provence —
+                <time datetime="2020">2020</time>–<time datetime="2022"
+                  >2022</time
+                >
+              </p>
+            </article>
+            <article class="card">
+              <h4>Baccalauréat Économique et Social</h4>
+              <p>
+                Lycée Charles Péguy, Marseille —
+                <time datetime="2020">2020</time>
+              </p>
+            </article>
+          </div>
+
+          <h3 class="subtitle">Mes expériences</h3>
+          <div class="cards">
+            <article class="card">
+              <h4>Employée caisse & rayon</h4>
+              <p>
+                Picard, Marseille — CDD —
+                <time datetime="2025-03">Mars 2025</time>–<time
+                  datetime="2025-09"
+                  >Sept. 2025</time
+                >
+              </p>
+            </article>
+            <article class="card">
+              <h4>Assistante administrative & communication</h4>
+              <p>
+                Le Plateau, Montpellier — Stage —
+                <time datetime="2025-03">Mars 2025</time>–<time
+                  datetime="2025-06"
+                  >Juin 2025</time
+                >
+              </p>
+            </article>
+            <article class="card">
+              <h4>Assistante administrative & production</h4>
+              <p>
+                Les Écrans du Sud - Marseille — Alternance —
+                <time datetime="2024-09">Sept. 2024</time>–<time
+                  datetime="2025-01"
+                  >Janv. 2025</time
+                >
+              </p>
+            </article>
+            <article class="card">
+              <h4>Technico-commerciale</h4>
+              <p>
+                EVA, Vitrolles — Alternance —
+                <time datetime="2023-11">Nov. 2023</time>–<time
+                  datetime="2024-09"
+                  >Sept. 2024</time
+                >
+              </p>
+            </article>
+            <article class="card">
+              <h4>Chasseuse de tête IT</h4>
+              <p>
+                TASKFORCE, Meyreuil — Alternance —
+                <time datetime="2022-11">Nov. 2022</time>–<time
+                  datetime="2023-11"
+                  >Nov. 2023</time
+                >
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPÉTENCES -->
+      <section
+        id="competences"
+        class="section"
+        aria-labelledby="competences-title"
+      >
+        <div class="container">
+          <header class="section-head">
+            <h2 id="competences-title" class="title">Mes compétences</h2>
+            <p>Les bases solides que je pratique au quotidien.</p>
+          </header>
+
+          <div class="grid">
+            <div class="col">
+              <h3>Domaines</h3>
+              <ul class="list">
+                <li>
+                  <h4>Intégration web</h4>
+                  <p>HTML5, CSS3 (Flex/Grid), responsive, accessibilité.</p>
+                </li>
+                <li>
+                  <h4>JavaScript</h4>
+                  <p>DOM, événements, petites animations.</p>
+                </li>
+                <li>
+                  <h4>Versioning</h4>
+                  <p>Git, GitHub (branches, PR, issues).</p>
+                </li>
+                <li>
+                  <h4>Bases Python</h4>
+                  <p>Scripts simples, petits jeux (Pendu).</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Développement</h3>
+              <ul class="list">
+                <li>HTML • CSS • JS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETS -->
+      <section id="projets" class="section" aria-labelledby="projets-title">
+        <div class="container">
+          <header class="section-head">
+            <h2 id="projets-title" class="title">Mes projets</h2>
+            <p>Un aperçu rapide, le reste sur GitHub.</p>
+          </header>
+
+          <div class="cards">
+            <article class="card project">
+              <img
+                src="img/Hangman.png"
+                alt="Aperçu du jeu du Pendu"
+                class="card-img"
+                width="420"
+                height="260"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Pendu</h3>
+                <p class="category">Jeu en Python (CLI)</p>
+                <a
+                  class="card-link"
+                  href="\\wsl.localhost\Ubuntu\home\mevar\Epitech\hangman\game.py"
+                  aria-label="Voir le projet Pendu"
+                  >Voir +</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="container">
+          <header class="section-head">
+            <h2 id="contact-title" class="title">Contact</h2>
+            <p>Dispo pour une alternance en dev (Marseille et alentours).</p>
+          </header>
+
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/XXXXX"
+            method="POST"
+            novalidate
+          >
+            <input
+              type="text"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+              hidden
+            />
+            <div class="field">
+              <label for="name">Nom</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                minlength="2"
+                autocomplete="name"
+              />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                inputmode="email"
+                autocomplete="email"
+              />
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                minlength="10"
+                maxlength="1000"
+              ></textarea>
+              <small class="error" aria-live="polite"></small>
+            </div>
+            <label class="check" for="consent">
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                value="yes"
+                required
+              />
+              J’accepte une réponse par email.
+            </label>
+            <button type="submit" class="btn-primary">Envoyer</button>
+            <p id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <div class="container grid footer-grid">
+        <div class="col">
+          <p>
+            &copy; <span id="year"></span> Mève Arroseres — Tous droits
+            réservés.
+          </p>
+        </div>
+        <div class="col">
+          <ul class="socials list">
+            <li><a href="https://www.linkedin.com/in/m%C3%A8ve-arroseres-77663a24b/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/Meve-Arroseres" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="#" target="_blank" rel="noopener">CV</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS  -->
+    <script>
+      // Année footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Burger
+      const burger = document.querySelector(".burger");
+      const menu = document.querySelector(".menu");
+      burger?.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("is-open");
+        burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      // Thème
+      const themeToggle = document.getElementById("themeToggle");
+      themeToggle?.addEventListener("click", () => {
+        document.documentElement.toggleAttribute("data-light");
+      });
+    </script>
+  </body>
+</html>
